@@ -1,0 +1,138 @@
+:root {
+    --blue: #18c2e0;
+    --sky-blue: #009ad8;
+    --dark: #1e202b;
+    --dark-trans: rgba(30, 32, 43, 0.8);
+    --washed-dark: #262936;
+    --white: #fffff2;
+    --gray: #bfc1c0;
+    --font: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  }
+  body {
+    font-family: var(--font) !important;
+  }
+  
+  .active {
+    border: 2px solid var(--sky-blue) !important ;
+    border-radius: 30px;
+    color: var(--blue) !important;
+  }
+  .nav-link {
+    border: 2px solid transparent;
+    border-radius: 30px;
+    transition: 0.3s ease;
+    color: white;
+  }
+  .nav-link:hover {
+    border: 2px solid var(--sky-blue);
+    border-radius: 30px;
+    color: var(--blue);
+  }
+  #home {
+    background-image:url(../image/clouds-8459053_1280.jpg);
+    background-size: cover;
+    background-position: center center;
+    height: 100vh;
+    background-attachment: fixed;
+    
+  }
+  .card{
+    border-radius: 10px;
+    min-height: 385px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  }
+  .card-body h5{
+    font-size: 30px;
+  }
+  .card-body p{
+    font-size: 20px;
+    color: var(--blue);
+  }
+  
+  .form {
+    max-width: 600px;
+    position: relative;
+    display: flex;
+    margin: auto;
+    align-items: center;
+  }
+  .form button {
+    position: absolute;
+    right: 5px;
+    height: 85%;
+    border-radius: 30px !important;
+  }
+  .form-control:focus {
+    box-shadow: none !important;
+  }
+  .form-control {
+    background-color: transparent !important;
+    border: 1px solid var(--blue) !important;
+    border-radius: 30px !important;
+    padding: 20px 30px 20px 20px !important;
+    
+  }
+  .form ::placeholder{
+    color: var(--gray);
+  }
+  .icon-item{
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background: #1e202b;
+    color: #009ad8;
+    line-height: 2;
+    transition: 0.3s ease;
+    font-size: 20px;
+    font-size: 1.4285714286em;
+  }
+  .icon-item:hover{
+    background: #009ad8;
+    color: white;
+  }
+  
+  footer p{
+    font-size: 15px;
+    color: var(--gray);
+    font-family: 'Courier New', Courier, monospace;
+  }
+  .footer-name{
+    color: var(--blue);
+  }
+  @media (max-width: 550px) {
+    :root {
+      font-size: 14px;
+    }
+  
+   #home{
+    height:auto;
+   } 
+  
+    #home .container {
+      padding-left: 40px;
+      padding-right: 40px;
+    }
+    .card{
+      margin: 10px;
+    }
+  }
+  @media (max-width: 767px) {
+    :root {
+      font-size: 14px;
+    }
+  
+   #home{
+    height:auto;
+   } 
+  
+    #home .container {
+      padding-left: 40px;
+      padding-right: 40px;
+    }
+    .card{
+      margin: 10px;
+    }
+  }
